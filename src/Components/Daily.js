@@ -11,7 +11,7 @@ function Daily() {
     let cancel;
     setIsLoaded(false);
     axios.get(
-        "http://localhost:5000/api/daily",
+        "https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/daily",
         new axios.CancelToken((c) => (cancel = c))
       ).then((response) => {
         setIsLoaded(true);

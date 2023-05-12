@@ -53,7 +53,7 @@ function Signup() {
             error = true;
         }
         if(!error) {
-            axios.post("http://localhost:5000/api/register", {
+            axios.post("https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/register", {
                 "username" : username,
                 "email_address": email,
                 "password1" : password,

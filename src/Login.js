@@ -22,13 +22,13 @@ function Login() {
       setUsernameError("Please provide a username");
       error = true;
     }
-    if (password === "") {
+    if (password === ""){
       setPasswordError("Please provide a password");
       error = true;
     }
     if (!error) {
         axios
-          .post("http://localhost:5000/api/login", {
+          .post("https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/login", {
             username,
             password,
           })

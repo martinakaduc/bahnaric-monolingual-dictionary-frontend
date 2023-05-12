@@ -68,11 +68,11 @@ function App() {
         <div className="page">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/bahnar/monolingual-dictionary" element={<Home />} />
+            <Route path="/bahnar/monolingual-dictionary/search" element={<Search />} />
+            <Route path="/bahnar/monolingual-dictionary/login" element={<Login />} />
+            <Route path="/bahnar/monolingual-dictionary/signup" element={<Signup />} />
+            <Route path="/bahnar/monolingual-dictionary/profile" element={<Profile />} />
           </Routes>
           <Footer />
         </div>

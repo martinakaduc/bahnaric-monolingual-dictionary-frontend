@@ -15,7 +15,7 @@ function Card({ word, pos, BinhDinh, GiaLai, KonTum, id }) {
     if (state.username) {
       const token = state.token;
       axios.post(
-        "http://localhost:5000/api/check_bookmark",
+        "https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/check_bookmark",
         { id },
         {
           headers: {
@@ -34,7 +34,7 @@ function Card({ word, pos, BinhDinh, GiaLai, KonTum, id }) {
       const token = state.token;
       axios
         .post(
-          "http://localhost:5000/api/update_bookmark",
+          "https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/update_bookmark",
           {
             id,
           },
@@ -54,7 +54,7 @@ function Card({ word, pos, BinhDinh, GiaLai, KonTum, id }) {
     if (state.username) {
       const token = state.token;
       const result = await axios.post(
-        "http://localhost:5000/api/check_bookmark",
+        "https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/check_bookmark",
         { id },
         {
           headers: {

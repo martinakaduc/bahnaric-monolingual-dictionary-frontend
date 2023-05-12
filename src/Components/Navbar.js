@@ -20,7 +20,7 @@ function Navbar() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    navigate("/login");
+    navigate("/bahnar/monolingual-dictionary/login");
   };
 
   const handleLogout = (e) => {
@@ -28,18 +28,18 @@ function Navbar() {
     dispatch({
       type: "LOGOUT",
     });
-    navigate("/");
+    navigate("/bahnar/monolingual-dictionary");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (searchValue !== "") {
-      navigate("/search", { state: { searchValue: searchValue } });
+      navigate("/bahnar/monolingual-dictionary/search", { state: { searchValue: searchValue } });
     }
   };
   return (
     <nav className="nav">
-      <Link to={"/"} style={{ textDecoration: "none" }}>
+      <Link to={"/bahnar/monolingual-dictionary/"} style={{ textDecoration: "none" }}>
         <div className="logo">Bahnaric</div>
       </Link>
       <div className="search">
@@ -57,7 +57,7 @@ function Navbar() {
       <div className="profile">
         {state.username ? (
           <>
-            <Link className="to-profile" to={"/profile"} style={{ textDecoration: "none" }}>
+            <Link className="to-profile" to={"/bahnar/monolingual-dictionary/profile"} style={{ textDecoration: "none" }}>
               <span className="nav-username">{state.username}</span>
               <IconContext.Provider value={{ size: "42px" }}>
                 <CgProfile />

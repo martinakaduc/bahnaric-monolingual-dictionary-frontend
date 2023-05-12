@@ -11,7 +11,7 @@ function Home() {
         <h1>Đơn ngữ của ngày</h1>
         <Daily/>
         <h1>Danh sách đơn ngữ</h1>
-        <WordList api={"http://localhost:5000/api/dict"}/>
+        <WordList api={"https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/dict"}/>
       </div>
     </>
   );

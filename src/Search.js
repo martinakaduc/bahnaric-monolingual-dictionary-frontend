@@ -16,7 +16,7 @@ function Search() {
     <>
       <div className="search-page main">
         <h1>Kết quả tìm kiếm cho "{search}"</h1>
-        <WordList api={search == "" ? null : `http://localhost:5000/api/search?searched_word=${search}`}/>
+        <WordList api={search == "" ? null : `https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/search?searched_word=${search}`}/>
       </div>
     </>
   );

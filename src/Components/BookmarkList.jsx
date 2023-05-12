@@ -9,7 +9,7 @@ import AuthService from "../AuthService";
 function BookmarkList() {
   const [data, setData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentPage, setCurrentPage] = useState("http://localhost:5000/api/bookmark");
+  const [currentPage, setCurrentPage] = useState("https://www.ura.hcmut.edu.vn/bahnar/monolingual-dictionary/api/bookmark");
   const [currentPageNum, setCurrentPageNum] = useState(1);
   const [nextPage, setNextPage] = useState();
   const [prevPage, setPrevPage] = useState();
